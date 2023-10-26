@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework2-TBC_IT-Academy</string>
+    <string name="insert_number_prompt">შეიყვანეთ მთელი რიცხვი 0-დან 1000-ის ჩათვლით</string>
+    <string name="insert_number_here">შეიყვანეთ რიცხვი</string>
+    <string name="convert">კონვერტაცია</string>
+    <string name="result">შეყვანილი რიცხვის სიტყვიერი ჩანაწერია %s</string>
+    <string name="warning">გთხოვთ შეიყვანოთ მთელი რიცხვი 0-დან 1000-ის ჩათვლით</string>
+</resources>

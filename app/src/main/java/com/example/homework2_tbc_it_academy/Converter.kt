@@ -1,7 +1,7 @@
 package com.example.homework2_tbc_it_academy
 
 private val ones =
-    arrayOf("", "ერთი", "ორი", "სამი", "ოთხი", "ხუთი", "ექვსი", "შვიდი", "რვა", "ცხრა")
+    arrayOf("ნული", "ერთი", "ორი", "სამი", "ოთხი", "ხუთი", "ექვსი", "შვიდი", "რვა", "ცხრა")
 
 private val fromTenToNineteen =
     arrayOf("ათი", "თერთმეტი", "თორმეტი", "ცამეტი", "თოთხმეტი", "თხუთმეტი", "თექვსმეტი", "ჩვიდმეტი", "თვრამეტი", "ცხრამეტი")
@@ -18,18 +18,15 @@ enum class Suffixes(val value: String) {
 }
 
 fun numberToWord(number: Int): String {
-    if (number == 0) return "ნული"
-    if (number == 1000) return "ათასი"
-
     return when (number) {
-        in 1..9 -> convertFrom1To9ToString(number)
+        in 0..9 -> convertFrom0To9ToString(number)
         in 10..99 -> convertFrom10To99ToString(number)
         in 100..999 -> convertFrom100To999ToString(number)
-        else -> ""
+        else -> "ათასი"
     }
 }
 
-private fun convertFrom1To9ToString(number: Int): String {
+private fun convertFrom0To9ToString(number: Int): String {
     return ones[number]
 }
 
@@ -82,7 +79,7 @@ private fun convertFrom100To999ToString(number: Int): String {
      * Therefore, to find the last two digits we re-use the function that was created to find such numbers.
      */
     if (lastTwoDigits < 10)
-        return "$firstDigitConvertedToString ${convertFrom1To9ToString(lastTwoDigits % 10)}"
+        return "$firstDigitConvertedToString ${convertFrom0To9ToString(lastTwoDigits % 10)}"
 
     /*
      * If we have 3-digit number and last 2 digits are less than 20 and more than 9, it means number is in the range of 110..119, 210..219 and so on.

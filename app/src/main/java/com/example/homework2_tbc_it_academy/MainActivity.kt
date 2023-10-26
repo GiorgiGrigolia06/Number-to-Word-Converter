@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 import com.example.homework2_tbc_it_academy.databinding.ActivityMainBinding
 import java.lang.NumberFormatException
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
     companion object {
         private const val RESULT_TEXT_KEY = "resultText"
         private const val RESULT_TEXT_COLOR_KEY = "resultTextColor"
@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getResult() {
+        val input = binding.userInputEditText.text.toString().toInt()
         try {
-            val input = binding.userInputEditText.text.toString().toInt()
             if (input > 1000 || input < 0) {
                 binding.result.text = getText(R.string.warning)
                 binding.result.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_light))

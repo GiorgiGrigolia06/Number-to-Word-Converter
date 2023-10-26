@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="linear_layout_padding">28dp</dimen>
+    <dimen name="text_input_width">260dp</dimen>
+    <dimen name="component_top_margin">16dp</dimen>
+</resources>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="28dp"
+    android:padding="@dimen/linear_layout_padding"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,9 +20,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/user_input"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="260dp"
+        android:layout_width="@dimen/text_input_width"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/component_top_margin">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_input_edit_text"
@@ -39,16 +39,16 @@
         android:id="@+id/convert_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/component_top_margin"
         android:text="@string/convert" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/component_top_margin"
         android:textAlignment="center"
         android:textSize="16sp"
         tools:text="შეყვანილი რიცხვის სიტყვიერი ჩანაწერია სამას ოცი" />
-    
+
 </LinearLayout>

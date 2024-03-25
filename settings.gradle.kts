@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Homework2-TBC_IT-Academy"
+rootProject.name = "NumberToWordConverter"
 include(":app")
  

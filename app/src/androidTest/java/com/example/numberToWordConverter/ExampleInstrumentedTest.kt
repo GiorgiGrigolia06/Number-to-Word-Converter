@@ -1,4 +1,4 @@
-package com.example.homework2_tbc_it_academy
+package com.example.numberToWordConverter
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

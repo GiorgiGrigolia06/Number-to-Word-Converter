@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Homework2-TBC_IT-Academy</string>
+    <string name="app_name">Number to Word Converter</string>
     <string name="insert_number_prompt">შეიყვანეთ მთელი რიცხვი 0-დან 1000-ის ჩათვლით</string>
     <string name="insert_number_here">შეიყვანეთ რიცხვი</string>
     <string name="convert">კონვერტაცია</string>

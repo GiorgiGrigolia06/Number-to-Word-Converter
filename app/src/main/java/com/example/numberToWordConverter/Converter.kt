@@ -1,4 +1,4 @@
-package com.example.homework2_tbc_it_academy
+package com.example.numberToWordConverter
 
 private val ones =
     arrayOf("ნული", "ერთი", "ორი", "სამი", "ოთხი", "ხუთი", "ექვსი", "შვიდი", "რვა", "ცხრა")
